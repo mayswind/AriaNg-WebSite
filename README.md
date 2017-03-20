@@ -1,2 +1,0 @@
-# AriaNg-WebSite
-AriaNg WebSite
