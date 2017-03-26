@@ -16,43 +16,43 @@
     <header>
       <div class="inner">
         <h1>AriaNg</h1>
-        <h2>a web frontend making aria2 better.</h2>
-          <a href="https://github.com/mayswind/AriaNg" class="button"><small>View project on</small> GitHub</a>
+        <h2>让 aria2 更好用的 Web 前端.</h2>
+          <a href="https://github.com/mayswind/AriaNg" class="button"><small>访问项目的</small> GitHub</a>
       </div>
     </header>
 
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h2 id="command-api">Command Api</h2>
-          <p>AriaNg provides command line api for third-party application to call AriaNg functions conveniently. You can navigate to <strong>http(s)://AriaNg/#/command_api/parameters_1/.../parameters_n</strong> to call command api.</p>
+          <h2 id="command-api">命令行 Api</h2>
+          <p>AriaNg 针对第三方应用提供命令行 API 以方便地调用 AriaNg 的功能. 您可以请求 <strong>http(s)://AriaNg/#/command_api/parameters_1/.../parameters_n</strong> 调用命令行 API.</p>
 
-          <h3 id="new-task">New Task</h3>
-          <p><strong>Syntax:</strong></p>
+          <h3 id="new-task">新建任务</h3>
+          <p><strong>语法:</strong></p>
           <div class="highlighter-rouge">
 <pre class="highlight"><code>/#/new/${encoded_url}</code></pre>
           </div>
           <ul>
-            <li>${encoded_url} is download url which is encoded by url-safe base64.</li>
+            <li>${encoded_url} 为使用 URL 安全的 base64 编码后的下载地址.</li>
           </ul>
-          <p><strong>Example:</strong></p>
+          <p><strong>示例:</strong></p>
           <div class="highlighter-rouge">
 <pre class="highlight"><code>/#/new/aHR0cHM6Ly9naXRodWIuY29tL21heXN3aW5kL0FyaWFOZy1EYWlseUJ1aWxkL2FyY2hpdmUvbWFzdGVyLnppcA==</code></pre>
           </div>
 
-          <h3 id="set-rpc-setting">Set Rpc Setting</h3>
-          <p><strong>Syntax:</strong></p>
+          <h3 id="set-rpc-setting">设置 Rpc 参数</h3>
+          <p><strong>语法:</strong></p>
           <div class="highlighter-rouge">
 <pre class="highlight"><code>/#/settings/rpc/set/${protocol}/${rpcHost}/${rpcPort}/${rpcInterface}/${secret}</code></pre>
           </div>
           <ul>
-            <li>${protocol} is connection protocol. You can use http, https, ws or wss.</li>
-            <li>${rpcHost} is aria2 rpc host. You can use ip or domain name.</li>
-            <li>${rpcPort} is aria2 rpc port.</li>
-            <li>${rpcInterface} is aria2 rpc path. The default is "jsonrpc".</li>
-            <li>${secret} is rpc secret which is encoded by url-safe base64, optional.</li>
+            <li>${protocol} 为连接协议. 您可以使用 http, https, ws 或 wss.</li>
+            <li>${rpcHost} 为 aria2 rpc 的主机. 您可以使用 IP 或域名.</li>
+            <li>${rpcPort} 为 aria2 rpc 的端口.</li>
+            <li>${rpcInterface} 为 aria2 rpc 的路径. 默认为 "jsonrpc".</li>
+            <li>${secret} 为使用 URL 安全的 base64 编码后的 rpc 密钥, 可选.</li>
           </ul>
-          <p><strong>Example:</strong></p>
+          <p><strong>示例:</strong></p>
           <div class="highlighter-rouge">
 <pre class="highlight"><code>/#/settings/rpc/set/http/127.0.0.1/6800/jsonrpc</code></pre>
           </div>
@@ -60,15 +60,15 @@
 
         <aside id="sidebar">
           <a href="https://github.com/mayswind/AriaNg/releases" class="button sprite" target="_blank" role="button">
-            <small>Download</small> Latest Release
+            <small>下载</small> 最新发布版本
           </a>
           <a href="https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip" class="button sprite" role="button">
-            <small>Download</small> Daily Build
+            <small>下载</small> 最新每日构建
           </a>
           <a href="https://github.com/mayswind/AriaNg/archive/master.zip" class="button sprite" role="button">
-            <small>Download</small> Source Code
+            <small>下载</small> 源代码
           </a>
-          <p class="repo-owner"><a href="https://github.com/mayswind/AriaNg">AriaNg</a> is maintained by <a href="https://github.com/mayswind">mayswind</a>.</p>
+          <p class="repo-owner"><a href="https://github.com/mayswind/AriaNg">AriaNg</a> 由 <a href="https://github.com/mayswind">mayswind</a> 维护.</p>
         </aside>
       </div>
     </div>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/css/fonts.min.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="/css/style.min.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="/css/print.min.css" media="print" type="text/css">
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <![endif]-->
+    <title>AriaNg</title>
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <h1>AriaNg</h1>
+        <h2>让 aria2 更好用的 Web 前端.</h2>
+          <a href="https://github.com/mayswind/AriaNg" class="button"><small>访问项目的</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <p>
+            <img src="https://img.shields.io/github/license/mayswind/AriaNg.svg?style=flat"/>
+            <img src="https://img.shields.io/circleci/project/mayswind/AriaNg.svg?style=flat"/>
+            <img src="https://img.shields.io/github/release/mayswind/AriaNg.svg?style=flat"/>
+          </p>
+
+          <h2 id="introduction">介绍</h2>
+          <p>AriaNg 是一个让 aria2 更好用的 Web 前端. AriaNg 使用纯 html & javascript 开发, 所以其不需要任何编译器或运行环境. 您只要将 AriaNg 放在您的 Web 服务器里并在浏览器中打开即可使用. AriaNg 使用响应式布局, 支持各种计算机或移动设备.</p>
+
+          <h2 id="features">特性</h2>
+          <ol>
+            <li>纯 Html & Javascript 实现, 不依赖任何运行时</li>
+            <li>响应式布局设计, 兼容计算机与移动设备</li>
+            <li>友好的界面交互
+              <ul>
+                <li>任务排序 (按文件名, 文件大小, 进度, 剩余时间, 下载速度等.), 文件排序, 连接节点排序</li>
+                <li>任务搜索</li>
+                <li>拖拽调整下载顺序</li>
+                <li>更详细的任务信息 (健康度, 连接节点客户端信息等.)</li>
+                <li>根据文件类型过滤任务中的文件 (按视频, 音频, 图片, 文档, 应用程序, 存档文件等.)</li>
+                <li>全局以及单任务的上传/下载图表</li>
+                <li>完整支持 aria2 设置选项</li>
+              </ul>
+            </li>
+            <li>支持网页地址命令行 API</li>
+            <li>下载完成消息通知</li>
+            <li>多语言支持</li>
+            <li>支持配置多个 aria2 RPC</li>
+            <li>节省带宽, 仅请求增量数据</li>
+          </ol>
+
+          <h2 id="screenshots">截图</h2>
+          <h4 id="desktop">计算机</h4>
+          <p><img src="https://raw.githubusercontent.com/mayswind/AriaNg-WebSite/master/screenshots/desktop.png" alt="AriaNg" /></p>
+          <h4 id="mobile-device">移动设备</h4>
+          <p><img src="https://raw.githubusercontent.com/mayswind/AriaNg-WebSite/master/screenshots/mobile.png" alt="AriaNg" /></p>
+
+          <h2 id="installation">安装</h2>
+          <h4 id="prebuilt-release">下载即用</h4>
+          <p>最新发布版本: <a href="https://github.com/mayswind/AriaNg/releases">https://github.com/mayswind/AriaNg/releases</a></p>
+
+          <p>最新每日构建: <a href="https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip">https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip</a></p>
+
+          <h4 id="building-from-source">从源代码中构建</h4>
+          <p>首先请确保您已经安装 <a href="https://nodejs.org/">Node.js</a>, <a href="https://www.npmjs.com/">NPM</a> and <a href="https://bower.io/">Bower</a>. 然后下载源代码并执行以下步骤.</p>
+
+          <div class="highlighter-rouge">
+<pre class="highlight"><code>$ npm install
+$ bower install
+$ gulp clean build
+</code></pre>
+          </div>
+
+          <p>构建后的内容将放置在 dist 目录中.</p>
+
+          <h2 id="demo">Demo</h2>
+          <p>请访问 <a href="http://ariang.mayswind.net/latest">http://ariang.mayswind.net/latest</a></p>
+
+          <h2 id="command-api">命令行 API</h2>
+          <p>请访问 <a href="  command-api.html">命令行 API 文档</a> 获取更多信息.</p>
+
+          <h2 id="license">协议</h2>
+          <p><a href="https://github.com/mayswind/AriaNg/blob/master/LICENSE">MIT</a></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/mayswind/AriaNg/releases" class="button sprite" target="_blank" role="button">
+            <small>下载</small> 最新发布版本
+          </a>
+          <a href="https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip" class="button sprite" role="button">
+            <small>下载</small> 最新每日构建
+          </a>
+          <a href="https://github.com/mayswind/AriaNg/archive/master.zip" class="button sprite" role="button">
+            <small>下载</small> 源代码
+          </a>
+          <p class="repo-owner"><a href="https://github.com/mayswind/AriaNg">AriaNg</a> 由 <a href="https://github.com/mayswind">mayswind</a> 维护.</p>
+        </aside>
+      </div>
+    </div>
+  </body>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ce520cd9a8a0cc00c0ef8d99c0a3cb80";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</html>
