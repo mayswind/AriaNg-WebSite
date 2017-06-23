@@ -25,25 +25,25 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h2 id="command-api">命令行 Api</h2>
-          <p>AriaNg 针对第三方应用提供命令行 API 以方便地调用 AriaNg 的功能. 您可以请求 <strong>http(s)://AriaNg/#/command_api/parameters_1/.../parameters_n</strong> 调用命令行 API.</p>
+          <p>AriaNg 针对第三方应用提供命令行 API 以方便地调用 AriaNg 的功能. 您可以请求 <strong>http(s)://AriaNg/#!/command_api/parameters_1/.../parameters_n</strong> 调用命令行 API.</p>
 
           <h3 id="new-task">新建任务</h3>
           <p><strong>语法:</strong></p>
           <div class="highlighter-rouge">
-<pre class="highlight"><code>/#/new/${encoded_url}</code></pre>
+<pre class="highlight"><code>/#!/new/${encoded_url}</code></pre>
           </div>
           <ul>
             <li>${encoded_url} 为使用 URL 安全的 base64 编码后的下载地址.</li>
           </ul>
           <p><strong>示例:</strong></p>
           <div class="highlighter-rouge">
-<pre class="highlight"><code>/#/new/aHR0cHM6Ly9naXRodWIuY29tL21heXN3aW5kL0FyaWFOZy1EYWlseUJ1aWxkL2FyY2hpdmUvbWFzdGVyLnppcA==</code></pre>
+<pre class="highlight"><code>/#!/new/aHR0cHM6Ly9naXRodWIuY29tL21heXN3aW5kL0FyaWFOZy1EYWlseUJ1aWxkL2FyY2hpdmUvbWFzdGVyLnppcA==</code></pre>
           </div>
 
           <h3 id="set-rpc-setting">设置 Rpc 参数</h3>
           <p><strong>语法:</strong></p>
           <div class="highlighter-rouge">
-<pre class="highlight"><code>/#/settings/rpc/set/${protocol}/${rpcHost}/${rpcPort}/${rpcInterface}/${secret}</code></pre>
+<pre class="highlight"><code>/#!/settings/rpc/set/${protocol}/${rpcHost}/${rpcPort}/${rpcInterface}/${secret}</code></pre>
           </div>
           <ul>
             <li>${protocol} 为连接协议. 您可以使用 http, https, ws 或 wss.</li>
@@ -54,7 +54,7 @@
           </ul>
           <p><strong>示例:</strong></p>
           <div class="highlighter-rouge">
-<pre class="highlight"><code>/#/settings/rpc/set/http/127.0.0.1/6800/jsonrpc</code></pre>
+<pre class="highlight"><code>/#!/settings/rpc/set/http/127.0.0.1/6800/jsonrpc</code></pre>
           </div>
         </section>
 

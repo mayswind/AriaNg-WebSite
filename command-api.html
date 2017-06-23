@@ -25,25 +25,25 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h2 id="command-api">Command Api</h2>
-          <p>AriaNg provides command line api for third-party application to call AriaNg functions conveniently. You can navigate to <strong>http(s)://AriaNg/#/command_api/parameters_1/.../parameters_n</strong> to call command api.</p>
+          <p>AriaNg provides command line api for third-party application to call AriaNg functions conveniently. You can navigate to <strong>http(s)://AriaNg/#!/command_api/parameters_1/.../parameters_n</strong> to call command api.</p>
 
           <h3 id="new-task">New Task</h3>
           <p><strong>Syntax:</strong></p>
           <div class="highlighter-rouge">
-<pre class="highlight"><code>/#/new/${encoded_url}</code></pre>
+<pre class="highlight"><code>/#!/new/${encoded_url}</code></pre>
           </div>
           <ul>
             <li>${encoded_url} is download url which is encoded by url-safe base64.</li>
           </ul>
           <p><strong>Example:</strong></p>
           <div class="highlighter-rouge">
-<pre class="highlight"><code>/#/new/aHR0cHM6Ly9naXRodWIuY29tL21heXN3aW5kL0FyaWFOZy1EYWlseUJ1aWxkL2FyY2hpdmUvbWFzdGVyLnppcA==</code></pre>
+<pre class="highlight"><code>/#!/new/aHR0cHM6Ly9naXRodWIuY29tL21heXN3aW5kL0FyaWFOZy1EYWlseUJ1aWxkL2FyY2hpdmUvbWFzdGVyLnppcA==</code></pre>
           </div>
 
           <h3 id="set-rpc-setting">Set Rpc Setting</h3>
           <p><strong>Syntax:</strong></p>
           <div class="highlighter-rouge">
-<pre class="highlight"><code>/#/settings/rpc/set/${protocol}/${rpcHost}/${rpcPort}/${rpcInterface}/${secret}</code></pre>
+<pre class="highlight"><code>/#!/settings/rpc/set/${protocol}/${rpcHost}/${rpcPort}/${rpcInterface}/${secret}</code></pre>
           </div>
           <ul>
             <li>${protocol} is connection protocol. You can use http, https, ws or wss.</li>
@@ -54,7 +54,7 @@
           </ul>
           <p><strong>Example:</strong></p>
           <div class="highlighter-rouge">
-<pre class="highlight"><code>/#/settings/rpc/set/http/127.0.0.1/6800/jsonrpc</code></pre>
+<pre class="highlight"><code>/#!/settings/rpc/set/http/127.0.0.1/6800/jsonrpc</code></pre>
           </div>
         </section>
 
