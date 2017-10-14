@@ -30,20 +30,26 @@
           <h3 id="new-task">New Task</h3>
           <p><strong>Syntax:</strong></p>
           <div class="highlighter-rouge">
-<pre class="highlight"><code>/#!/new/${encoded_url}</code></pre>
+<pre class="highlight"><code>/#!/new/${encoded_url}
+or
+/#!/new/task?url=${encoded_url}</code></pre>
           </div>
           <ul>
-            <li>${encoded_url} is download url which is encoded by url-safe base64.</li>
+            <li>${encoded_url} is download url which is encoded by <a href="http://www.ietf.org/rfc/rfc4648.txt" target="_blank">url-safe base64</a>.</li>
           </ul>
           <p><strong>Example:</strong></p>
           <div class="highlighter-rouge">
-<pre class="highlight"><code>/#!/new/aHR0cHM6Ly9naXRodWIuY29tL21heXN3aW5kL0FyaWFOZy1EYWlseUJ1aWxkL2FyY2hpdmUvbWFzdGVyLnppcA==</code></pre>
+<pre class="highlight"><code>/#!/new/aHR0cHM6Ly9naXRodWIuY29tL21heXN3aW5kL0FyaWFOZy1EYWlseUJ1aWxkL2FyY2hpdmUvbWFzdGVyLnppcA==
+or
+/#!/new/task?url=aHR0cHM6Ly9naXRodWIuY29tL21heXN3aW5kL0FyaWFOZy1EYWlseUJ1aWxkL2FyY2hpdmUvbWFzdGVyLnppcA==</code></pre>
           </div>
 
           <h3 id="set-rpc-setting">Set Rpc Setting</h3>
           <p><strong>Syntax:</strong></p>
           <div class="highlighter-rouge">
-<pre class="highlight"><code>/#!/settings/rpc/set/${protocol}/${rpcHost}/${rpcPort}/${rpcInterface}/${secret}</code></pre>
+<pre class="highlight"><code>/#!/settings/rpc/set/${protocol}/${rpcHost}/${rpcPort}/${rpcInterface}/${secret}
+or
+/#!/settings/rpc/set?protocol=${protocol}&host=${rpcHost}&port=${rpcPort}&interface=${rpcInterface}&secret=${secret}</code></pre>
           </div>
           <ul>
             <li>${protocol} is connection protocol. You can use http, https, ws or wss.</li>
@@ -54,7 +60,9 @@
           </ul>
           <p><strong>Example:</strong></p>
           <div class="highlighter-rouge">
-<pre class="highlight"><code>/#!/settings/rpc/set/http/127.0.0.1/6800/jsonrpc</code></pre>
+<pre class="highlight"><code>/#!/settings/rpc/set/http/127.0.0.1/6800/jsonrpc
+or
+/#!/settings/rpc/set?protocol=http&host=127.0.0.1&port=6800&interface=jsonrpc</code></pre>
           </div>
         </section>
 
