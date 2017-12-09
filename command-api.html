@@ -25,23 +25,27 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h2 id="command-api">Command Api</h2>
-          <p>AriaNg provides command line api for third-party application to call AriaNg functions conveniently. You can navigate to <strong>http(s)://AriaNg/#!/command_api/parameters_1/.../parameters_n</strong> to call command api.</p>
+          <p>AriaNg provides command line api for third-party application to call AriaNg functions conveniently. You can navigate to <strong>http(s)://AriaNgUrl/#!/command_api/parameters_1/.../parameters_n</strong> or <strong>http(s)://AriaNgUrl/#!/command_api?parameters_key_1=parameters_1&amp;...&amp;parameters_key_n=parameters_n</strong> to call command api.</p>
 
           <h3 id="new-task">New Task</h3>
           <p><strong>Syntax:</strong></p>
           <div class="highlighter-rouge">
-<pre class="highlight"><code>/#!/new/${encoded_url}
+<pre class="highlight"><code>/#!/new/${encoded_url}?${option_key_1}=${option_value_1}&...&${option_key_n}=${option_value_n}
 or
-/#!/new/task?url=${encoded_url}</code></pre>
+/#!/new/task?url=${encoded_url}&${option_key_1}=${option_value_1}&...&${option_key_n}=${option_value_n}</code></pre>
           </div>
           <ul>
             <li>${encoded_url} is download url which is encoded by <a href="http://www.ietf.org/rfc/rfc4648.txt" target="_blank">url-safe base64</a>.</li>
+            <li>${option_key}, ${option_value} is the key and value of <a href="https://aria2.github.io/manual/en/html/aria2c.html#options" target="_blank">aria2 option</a> for creating task, optional.</li>
           </ul>
           <p><strong>Example:</strong></p>
           <div class="highlighter-rouge">
 <pre class="highlight"><code>/#!/new/aHR0cHM6Ly9naXRodWIuY29tL21heXN3aW5kL0FyaWFOZy1EYWlseUJ1aWxkL2FyY2hpdmUvbWFzdGVyLnppcA==
 or
 /#!/new/task?url=aHR0cHM6Ly9naXRodWIuY29tL21heXN3aW5kL0FyaWFOZy1EYWlseUJ1aWxkL2FyY2hpdmUvbWFzdGVyLnppcA==</code></pre>
+<pre class="highlight"><code>/#!/new/aHR0cHM6Ly9naXRodWIuY29tL21heXN3aW5kL0FyaWFOZy1EYWlseUJ1aWxkL2FyY2hpdmUvbWFzdGVyLnppcA==&max-download-limit=100K
+or
+/#!/new/task?url=aHR0cHM6Ly9naXRodWIuY29tL21heXN3aW5kL0FyaWFOZy1EYWlseUJ1aWxkL2FyY2hpdmUvbWFzdGVyLnppcA==&max-download-limit=100K</code></pre>
           </div>
 
           <h3 id="set-rpc-setting">Set Rpc Setting</h3>
