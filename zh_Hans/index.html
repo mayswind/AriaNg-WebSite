@@ -65,13 +65,17 @@
           <p><img src="https://raw.githubusercontent.com/mayswind/AriaNg-WebSite/master/screenshots/mobile.png" alt="AriaNg" /></p>
 
           <h2 id="installation">安装</h2>
+          <p>AriaNg 现在提供三种版本, 标准版、单文件版和 <a href="https://github.com/mayswind/AriaNg-Native">AriaNg Native</a>. 标准版适合在 Web 服务器中部署, 提供资源缓存和按需加载的功能. 单文件版适合本地使用, 您下载后只要在浏览器中打开唯一的 html 文件即可. <a href="https://github.com/mayswind/AriaNg-Native">AriaNg Native</a> 同样适合本地使用, 并且不需要使用浏览器.</p>
+
           <h4 id="prebuilt-release">下载即用</h4>
           <p>最新发布版本: <a href="https://github.com/mayswind/AriaNg/releases">https://github.com/mayswind/AriaNg/releases</a></p>
 
-          <p>最新每日构建: <a href="https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip">https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip</a></p>
+          <p>最新每日构建 (标准版): <a href="https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip">https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip</a></p>
 
           <h4 id="building-from-source">从源代码中构建</h4>
           <p>首先请确保您已经安装 <a href="https://nodejs.org/">Node.js</a>, <a href="https://www.npmjs.com/">NPM</a> 和 <a href="https://gulpjs.com/">Gulp</a>. 然后下载源代码并执行以下步骤.</p>
+
+          <h5 id="building-from-source">标准版</h5>
 
           <div class="highlighter-rouge">
 <pre class="highlight"><code>$ npm install
@@ -79,10 +83,18 @@ $ gulp clean build
 </code></pre>
           </div>
 
+          <h5 id="building-from-source">单文件版</h5>
+
+          <div class="highlighter-rouge">
+<pre class="highlight"><code>$ npm install
+$ gulp clean build-bundle
+</code></pre>
+          </div>
+
           <p>构建后的内容将放置在 dist 目录中.</p>
 
           <h4 id="usage-notes">使用说明</h4>
-          <p>由于 AriaNg 通过异步加载语言文件，所以您可能无法直接在本地文件系统打开 index.html 来运行 AriaNg。建议将 AriaNg 部署在 Web 容器中，或下载不需要浏览器就可以运行的 <a href="https://github.com/mayswind/AriaNg-Native">AriaNg Native</a>。</p>
+          <p>由于 AriaNg 标准版 通过异步加载语言文件，所以您可能无法直接在本地文件系统打开 index.html 来运行 AriaNg。建议使用单文件版或将 AriaNg 部署在 Web 容器中，或下载不需要浏览器就可以运行的 <a href="https://github.com/mayswind/AriaNg-Native">AriaNg Native</a>。</p>
 
           <h2 id="demo">Demo</h2>
           <p>请访问 <a href="http://ariang.mayswind.net/latest">http://ariang.mayswind.net/latest</a></p>

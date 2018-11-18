@@ -65,13 +65,17 @@
           <p><img src="https://raw.githubusercontent.com/mayswind/AriaNg-WebSite/master/screenshots/mobile.png" alt="AriaNg" /></p>
 
           <h2 id="installation">Installation</h2>
+          <p>AriaNg now provides three versions, standard version, all-in-one version and <a href="https://github.com/mayswind/AriaNg-Native">AriaNg Native</a>. Standard version is suitable for deployment in the web server, and provides resource caching and on-demand loading. All-In-One version is suitable for local using, and you can download it and just open the only html file in browser. <a href="https://github.com/mayswind/AriaNg-Native">AriaNg Native</a> is also suitable for local using, and is no need for browser.</p>
+
           <h4 id="prebuilt-release">Prebuilt release</h4>
           <p>Latest Release: <a href="https://github.com/mayswind/AriaNg/releases">https://github.com/mayswind/AriaNg/releases</a></p>
 
-          <p>Latest Daily Build: <a href="https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip">https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip</a></p>
+          <p>Latest Daily Build (Standard Version): <a href="https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip">https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip</a></p>
 
           <h4 id="building-from-source">Building from source</h4>
           <p>Make sure you have <a href="https://nodejs.org/">Node.js</a>, <a href="https://www.npmjs.com/">NPM</a> and <a href="https://gulpjs.com/">Gulp</a> installed. Then download the source code, and follow these steps.</p>
+
+          <h5 id="building-from-source">Standard Version</h5>
 
           <div class="highlighter-rouge">
 <pre class="highlight"><code>$ npm install
@@ -79,10 +83,18 @@ $ gulp clean build
 </code></pre>
           </div>
 
+          <h5 id="building-from-source">All-In-One Version</h5>
+
+          <div class="highlighter-rouge">
+<pre class="highlight"><code>$ npm install
+$ gulp clean build-bundle
+</code></pre>
+          </div>
+
           <p>The builds will be placed in the dist directory.</p>
 
           <h4 id="usage-notes">Usage Notes</h4>
-          <p>Since AriaNg loads language resources asynchronously, you may not open index.html directly on the local file system to run AriaNg. It is recommended that you deploy AriaNg in a web container or download <a href="https://github.com/mayswind/AriaNg-Native">AriaNg Native</a> that does not require a browser to run.</p>
+          <p>Since AriaNg standard version loads language resources asynchronously, you may not open index.html directly on the local file system to run AriaNg. It is recommended that you can use the all-in-one version or deploy AriaNg in a web container or download <a href="https://github.com/mayswind/AriaNg-Native">AriaNg Native</a> that does not require a browser to run.</p>
 
           <h2 id="demo">Demo</h2>
           <p>Please visit <a href="http://ariang.mayswind.net/latest">http://ariang.mayswind.net/latest</a></p>
